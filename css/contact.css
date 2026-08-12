@@ -1,0 +1,228 @@
+/* =========================================
+   CONTACT PAGE
+   Page-specific styles
+   Shared styles are in main.css
+   ========================================= */
+
+
+/* Contact Section */
+
+.contact-section {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.contact-section h1 {
+    color: var(--white);
+}
+
+.contact-intro {
+    max-width: 600px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.contact-section hr {
+    border-color: rgba(255, 255, 255, 0.25);
+    margin: 1.5rem 0;
+}
+
+
+/* Contact Form */
+
+.contact-section .form-label {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.contact-section .form-control,
+.contact-section .form-select {
+    background-color: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: var(--white);
+    border-radius: 0.5rem;
+    min-height: 48px;
+}
+
+.contact-section textarea.form-control {
+    min-height: 110px;
+}
+
+.contact-section .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.contact-section .form-control:focus,
+.contact-section .form-select:focus {
+    border-color: var(--white);
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15);
+}
+
+
+/* Contact Map */
+
+.contact-map {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+
+/* Social Media */
+
+.social-section {
+    background-color: var(--black);
+}
+
+.social-box {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #444444;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-box a {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
+    background-color: var(--main-purple);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.social-box a:hover,
+.social-box a:focus {
+    background-color: var(--teal);
+    transform: translateY(-4px);
+}
+
+
+/* FAQ */
+
+.faq-section {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.faq-intro {
+    max-width: 600px;
+    color: var(--muted);
+}
+
+
+/* Bootstrap Accordion */
+
+.faq-section .accordion {
+    margin-top: 2rem;
+}
+
+.faq-section .accordion-item {
+    background-color: transparent;
+    border: 1px solid #252525;
+    margin-bottom: 0.6rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.faq-section .accordion-button {
+    background-color: #111111;
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+    background-color: #111111;
+    color: var(--white);
+}
+
+.faq-section .accordion-button::after {
+    filter: invert(1);
+}
+
+.faq-section .accordion-body {
+    background-color: #111111;
+    color: var(--muted);
+}
+
+
+/* Question Card */
+
+.question-card {
+    background-color: var(--teal);
+    color: var(--black);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.question-card h2 {
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.question-card .form-label {
+    font-weight: 700;
+}
+
+.question-card .form-control {
+    border: 0;
+    border-radius: 999px;
+    min-height: 48px;
+    padding-left: 1.25rem;
+}
+
+.question-card .btn-primary {
+    background-color: var(--main-purple);
+    border-color: var(--main-purple);
+    color: var(--black);
+}
+
+.question-card .btn-primary:hover,
+.question-card .btn-primary:focus {
+    background-color: var(--white);
+    border-color: var(--white);
+    color: var(--black);
+}
+
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+
+    .social-box {
+        padding: 1.25rem;
+    }
+
+    .social-box a {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+    }
+
+    .question-card {
+        padding: 1.5rem;
+    }
+
+    .contact-map {
+        aspect-ratio: 4 / 3;
+    }
+
+}

@@ -1,0 +1,236 @@
+/* =========================================
+   ABOUT PAGE
+   Page-specific styles only
+   Shared colors and image styles are in main.css
+   ========================================= */
+
+
+/* About Hero / Breadcrumb */
+
+.about-hero {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    background-color: var(--black);
+}
+
+.about-hero h1 {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+.about-hero .breadcrumb {
+    margin-bottom: 0.5rem;
+}
+
+.about-hero .breadcrumb-item a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.about-hero .breadcrumb-item a:hover,
+.about-hero .breadcrumb-item a:focus {
+    color: var(--teal);
+}
+
+.about-hero .breadcrumb-item.active {
+    color: var(--white);
+}
+
+.about-hero .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--muted);
+}
+
+
+/* About Intro */
+
+.about-intro {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.about-intro p {
+    color: var(--muted);
+}
+
+
+/* Mission */
+
+.mission {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.mission p {
+    color: var(--muted);
+}
+
+
+/* Shared accent text */
+
+.text-accent {
+    color: var(--main-purple);
+}
+
+
+/* Small badge */
+
+.pill-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 1rem;
+}
+
+
+/* Trainers */
+
+.trainers {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.trainers-sub {
+    max-width: 620px;
+    color: var(--muted);
+}
+
+.trainer-card {
+    height: 100%;
+}
+
+.trainer-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(100%);
+    margin-bottom: 1rem;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.trainer-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.trainer-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.15rem;
+}
+
+.trainer-role {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+/* Why Choose Us */
+
+.why-us {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.why-us p {
+    color: var(--teal);
+}
+
+.why-us h2 {
+    color: var(--main-purple);
+}
+
+
+/* Testimonials */
+
+.testimonials {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.testimonial-card {
+    background-color: #111111;
+    border-radius: var(--card-radius);
+    padding: 1.5rem;
+    height: 100%;
+    color: var(--white);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-name {
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+}
+
+.testimonial-stars {
+    color: #ffc107;
+    font-size: 0.85rem;
+    margin-bottom: 0;
+}
+
+.testimonial-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-text {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.testimonial-date {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+
+/* Testimonial Carousel */
+
+.testimonials .carousel-indicators [data-bs-target] {
+    background-color: var(--muted);
+}
+
+.testimonials .carousel-indicators .active {
+    background-color: var(--teal);
+}
+
+.testimonials .carousel-control-prev,
+.testimonials .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    top: -4rem;
+    background-color: var(--teal);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.testimonials .carousel-control-prev {
+    left: auto;
+    right: 4rem;
+}
+
+.testimonials .carousel-control-next {
+    right: 0;
+}
+
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+
+}
